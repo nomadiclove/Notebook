@@ -1,0 +1,7 @@
+1.step scale 增加这个值会使体积更加柔和且散射减弱 根据体积的大小设置 
+2.给skydome添加一个physical sky 
+3.提高volume ray depth 设为50 别忘了同时加大total ray depth到50+  这个值是关键参数！这会使光在体积内多次反弹 从而显得更明亮
+4.记住设置density为scatter color channel的通道
+5.transparent depth记着调节  这个值与体积大小相关 
+6.anisotropy 云应该设为正值  因为是前向散射
+7.提高灯光的volume samples为5+ 提高camera(AA)到5  提高 Volume Indirect到3

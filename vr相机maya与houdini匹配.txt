@@ -1,0 +1,7 @@
+规范（arnold vr 相机（双眼））
+1.maya  UE4 系统单位以cm为准   houdini系统单位以m为准
+
+2.将maya场景导入houdini中  首先要缩放场景大小到实际尺寸 即缩小为0.01倍（null为父节点缩放操作）
+
+3.eye separation  maya默认为0.650（cm）  则houdini设置为0.0065(m)   即需要保证实际数值相同
+   eye to neck distance  maya默认为0   houdini需要设置为0
